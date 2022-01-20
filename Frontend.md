@@ -2,7 +2,7 @@
 
 ## Mock
 
-![Initial Mock](https://github.com/vijaykrishnavanshi/assignment/blob/main/Assignment.png)
+![Initial Mock](https://github.com/vijaykrishnavanshi/assignment/blob/main/images/FEAssignment.png)
 
 ## User Story
 
