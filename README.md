@@ -16,6 +16,6 @@ Things to learn here are:
 
 ## Technologies
 
-* React.js
+* React.js / Next.js
 * Moralis
 * Metamask
