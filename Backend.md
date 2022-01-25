@@ -4,7 +4,7 @@ APIs:
 
 1. API to get NFTs that are on a particular address:
 ```
-  GET /nfts/:address
+  GET /nfts/:ethaddress
 
   Response: {
     tokenId: "",
@@ -18,7 +18,7 @@ APIs:
 2. API to get Tokens that are on a particular address:
 
 ```
-  GET /tokens/:address
+  GET /tokens/:ethaddress
 
   Response: {
     contractAddress: "",
@@ -32,3 +32,5 @@ APIs:
 
 * Node.js
 * Moralis
+
+Example address you can use: 0xb413fa62326a0de54b2741cb1f584d9dbad9ee31
