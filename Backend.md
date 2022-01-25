@@ -27,3 +27,8 @@ APIs:
     balance: "",
   }
 ```
+
+## Technologies
+
+* Node.js
+* Moralis
