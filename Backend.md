@@ -2,22 +2,25 @@
 
 APIs:
 
-GET /nfts/:address
+1. API to get NFTs that are on a particular address:
 
-Response: {
-  tokenId: "",
-  contractAddress: "",
-  image: "",
-  name: "",
-  description: ""
-}
+  GET /nfts/:address
 
-GET /tokens/:address
+  Response: {
+    tokenId: "",
+    contractAddress: "",
+    image: "",
+    name: "",
+    description: ""
+  }
 
-Response: {
-  contractAddress: "",
-  name: "",
-  logo: "",
-  balance: "",
-}
+2. API to get Tokens that are on a particular address:
 
+  GET /tokens/:address
+
+  Response: {
+    contractAddress: "",
+    name: "",
+    logo: "",
+    balance: "",
+  }
