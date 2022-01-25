@@ -17,5 +17,5 @@ Things to learn here are:
 ## Technologies
 
 * React.js / Next.js
-* Moralis
+* [Moralis](https://moralis.io/) - You'll need to create account to access their API
 * Metamask
