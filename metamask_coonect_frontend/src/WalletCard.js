@@ -14,7 +14,7 @@ const Walletcard = () => {
                 setUserBalance(ethers.utils.formatEther(res));
             })
             .catch((err) => {
-                setErrorMessage("Error in fetching balance");
+                setErrorMessage("Error in fetching balance:", err);
             });
     };
 
@@ -29,7 +29,7 @@ const Walletcard = () => {
                     getAccountBalance(res[0]);
                 })
                 .catch((err) => {
-                    setErrorMessage("Error in connecting account");
+                    setErrorMessage("Error in connecting account: ", err);
                 });
         } else {
             setErrorMessage("Install Metamask");
