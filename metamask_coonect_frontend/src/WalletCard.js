@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ethers } from "ethers";
 
 const Walletcard = () => {
     const [errorMessage, setErrorMessage] = useState(null);
@@ -6,10 +7,21 @@ const Walletcard = () => {
     const [userBalance, setUserBalance] = useState(null);
     const [buttonText, setButtonText] = useState("Connect");
 
+    const getAccountBalance = (address) => {
+        window.ethereum
+            .request({ method: "eth_getBalance", params: [address, "latest"] })
+            .then((res) => {
+                setUserBalance(ethers.utils.formatEther(res));
+            });
+    };
+
     const walletConnectHandler = () => {
         if (window.ethereum) {
             // metamask is installed
-            setErrorMessage("Metamask is Installed");
+            window.ethereum.request({ method: "eth_requestAccounts" }).then((res) => {
+                setDefaultAccount(res[0]);
+                getAccountBalance(res[0]);
+            });
         } else {
             setErrorMessage("Install Metamask");
         }
@@ -19,14 +31,14 @@ const Walletcard = () => {
             <h1>Ether Wallet</h1>
             <button onClick={walletConnectHandler}>{buttonText}</button>
             <div className="accountDisplay">
-                <h4>
-                    Address: <span>{defaultAccount}</span>
-                </h4>
+                <span>
+                    <b>Address:</b> <span>{defaultAccount}</span>
+                </span>
             </div>
             <div>
-                <h3 className="balanceDisplay">
-                    Balance: <span>{userBalance}</span>
-                </h3>
+                <span className="balanceDisplay">
+                    <b>Balance:</b> <span>{userBalance}</span>
+                </span>
             </div>
             <p className="errorDisplay">{errorMessage}</p>
         </div>
