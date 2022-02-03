@@ -1,0 +1,11 @@
+.walletCard {
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.errorDisplay{
+    color: red
+}

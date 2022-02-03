@@ -1,3 +1,4 @@
+import "./WalletCard.css";
 import { useState } from "react";
 import { ethers } from "ethers";
 
@@ -6,6 +7,7 @@ const Walletcard = () => {
     const [defaultAccount, setDefaultAccount] = useState(null);
     const [userBalance, setUserBalance] = useState(null);
     const [buttonText, setButtonText] = useState("Connect");
+    const [isConnected, setIsConnected] = useState(false);
 
     const getAccountBalance = (address) => {
         window.ethereum
@@ -25,6 +27,7 @@ const Walletcard = () => {
                 .request({ method: "eth_requestAccounts" })
                 .then((res) => {
                     setButtonText("Disconnect");
+                    setIsConnected(true);
                     setDefaultAccount(res[0]);
                     getAccountBalance(res[0]);
                 })
@@ -35,10 +38,21 @@ const Walletcard = () => {
             setErrorMessage("Install Metamask");
         }
     };
+
+    const walletDisconnectHandler = () => {
+        setIsConnected(false);
+        setButtonText("Connect");
+        setErrorMessage(null);
+        setDefaultAccount(null);
+        setUserBalance(null);
+    };
+
     return (
         <div className="walletCard">
             <h1>Ether Wallet</h1>
-            <button onClick={walletConnectHandler}>{buttonText}</button>
+            <button onClick={isConnected ? walletDisconnectHandler : walletConnectHandler}>
+                {buttonText}
+            </button>
             <div className="accountDisplay">
                 <span>
                     <b>Address:</b> <span>{defaultAccount}</span>
