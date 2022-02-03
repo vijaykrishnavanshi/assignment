@@ -12,16 +12,25 @@ const Walletcard = () => {
             .request({ method: "eth_getBalance", params: [address, "latest"] })
             .then((res) => {
                 setUserBalance(ethers.utils.formatEther(res));
+            })
+            .catch((err) => {
+                setErrorMessage("Error in fetching balance");
             });
     };
 
     const walletConnectHandler = () => {
         if (window.ethereum) {
             // metamask is installed
-            window.ethereum.request({ method: "eth_requestAccounts" }).then((res) => {
-                setDefaultAccount(res[0]);
-                getAccountBalance(res[0]);
-            });
+            window.ethereum
+                .request({ method: "eth_requestAccounts" })
+                .then((res) => {
+                    setButtonText("Disconnect");
+                    setDefaultAccount(res[0]);
+                    getAccountBalance(res[0]);
+                })
+                .catch((err) => {
+                    setErrorMessage("Error in connecting account");
+                });
         } else {
             setErrorMessage("Install Metamask");
         }
