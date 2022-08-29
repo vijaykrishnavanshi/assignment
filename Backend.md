@@ -2,31 +2,47 @@
 
 APIs:
 
-1. API to get NFTs that are on a particular address:
-```
-  GET /nfts/:ethaddress
+1. API to get NFTs that are on a particular address, response should be paginated:
 
-  Response: {
-    tokenId: "",
-    contractAddress: "",
-    image: "",
-    name: "",
-    description: ""
+```
+  GET /nfts/:ethaddress?pageSize=10&pageNo=1
+
+  Response: 
+  {
+    currentPage: 1,
+    hasNext: false,
+    nft: [{
+      tokenId: "",
+      contractAddress: "",
+      image: "",
+      name: "",
+      description: ""
+    }]
   }
 ```
 
-2. API to get Tokens that are on a particular address:
+2. API to get Tokens that are on a particular address, response should be paginated:
 
 ```
-  GET /tokens/:ethaddress
+  GET /tokens/:ethaddress?pageSize=10&pageNo=1
 
   Response: {
-    contractAddress: "",
-    name: "",
-    logo: "",
-    balance: "",
+    currentPage: 1,
+    hasNext: false,
+    token: [{
+      contractAddress: "",
+      name: "",
+      logo: "",
+      balance: "",
+    }]
   }
 ```
+
+## Bonus points
+
+* Test cases using mocha
+* Documentation
+* Postman Collection for easily testing
 
 ## Technologies
 
