@@ -51,3 +51,5 @@ APIs:
 * [Alchemy](https://www.alchemy.com/) - You'll need to create account to access their API
 
 Example address you can use: 0xb413fa62326a0de54b2741cb1f584d9dbad9ee31
+
+PS: Please try to submit the assignment within one week of recieving, shouldn't take more than 6/7 hours. And I hope at the end you learn something new :) 
