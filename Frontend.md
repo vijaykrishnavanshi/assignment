@@ -12,7 +12,7 @@ Things to learn here are:
 
 * how to connect metamask wallet to react app
 * what are nfts and how to show them
-* how to use moralis
+* how to use alchemy
 
 ## Technologies
 
