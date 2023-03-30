@@ -17,5 +17,5 @@ Things to learn here are:
 ## Technologies
 
 * React.js / Next.js
-* [Alchemy](https://www.alchemy.com/) - You'll need to create account to access their API
+* [Covalent](https://www.covalenthq.com/docs/api/) - You'll need to create account to access their API
 * Metamask
