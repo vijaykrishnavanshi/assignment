@@ -6,15 +6,26 @@
 
 ## User Story
 
-User visits a link and clicks on connect button. On click metamask shows a popup which lets user to connect. After connecting user can see the balance of their wallet and also a button to go to GM Page. 
-
-When clicked on GM button user will go to a page where GM is written with button a to go back.
+1. Connect wallet using Rainbow kit
+2. Interact with contract <address>
+3. Mint 100 Tokens to the connected wallet address
+4. Disperse tokens to list of wallet address
 
 Things to learn here are: 
 
-* how to connect metamask wallet to react app
-* Create a static build of the app
-* Deploy and host it on IPFS using fleek and make sure the sub page work as well
+* how to connect metamask wallet to react app - can use rainbowkit
+* Create a static build of the app with hash router
+* Deploy and host it on IPFS using fleek and make sure the sub pages work on ipfs gateway
+
+## Key Points
+
+* State Management
+* Documentation
+* Folder Structure
+
+## Bonus Points
+
+* Implement Embedded Wallet functionality
 
 ## Technologies
 
