@@ -52,3 +52,8 @@ Things to learn here are:
 * Metamask
 * IPFS
 * Fleek
+
+Help Section:
+* https://www.rainbowkit.com/
+* Connecting React Frontend to Smart Contract: https://www.youtube.com/watch?v=wOv-I4s8TSg&ab_channel=CodingTheSmartWay.com
+* https://blog.logrocket.com/how-build-dapp-host-ipfs-fleek/
