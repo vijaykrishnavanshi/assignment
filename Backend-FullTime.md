@@ -15,7 +15,7 @@ APIs:
   }
 ```
 
-1. API for serving a file:
+2. API for serving a file:
 
 ```
   GET /file/:fileId
