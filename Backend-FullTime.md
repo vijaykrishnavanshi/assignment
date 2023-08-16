@@ -37,6 +37,7 @@ APIs:
 * Explain how to write end 2 end tests
 * Postman Collection for easily testing
 * Use IPFS for storage
+* Docker File or Deployment Strategy
 
 ## Technologies
 
