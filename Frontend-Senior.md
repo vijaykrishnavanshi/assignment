@@ -18,7 +18,7 @@
 3. Mint 100 Tokens to the connected wallet address - mint function is public and can be called by anyone
 4. Disperse tokens to wallet address
 
-    a. first to only one address using trasfer function of the contract
+    a. first to only one address using transfer function of the contract
 
     b. then to multiple addresses - might need to sign multiple times
 
