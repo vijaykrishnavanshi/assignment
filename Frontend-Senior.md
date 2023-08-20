@@ -29,8 +29,7 @@
 Things to learn here are: 
 
 * how to connect metamask wallet to react app - can use rainbowkit
-* Create a static build of the app with hash router
-* Deploy and host it on IPFS using fleek and make sure the sub pages work on ipfs gateway
+* Deploy and host it
 * Create signless flow in the frontend for a dapp
 
 ## Key Points

@@ -6,5 +6,6 @@ There are Four assignments in this repo. Please refer to the one you are applyin
 
 * [Frontend Intern](./Frontend-Intern.md)
 * [Frontend Senior](./Frontend-Senior.md)
+* [Frontend Senior Collab](./Frontend-Senior-Collab.md)
 * [Backend Intern](./Backend-Intern.md)
 * [Backend Full Time](./Backend-FullTime.md)
