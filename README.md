@@ -2,7 +2,7 @@
 
 Hi there! 
 
-There are Four assignments in this repo. Please refer to the one you are applying.
+There are Five assignments in this repo. Please refer to the one you are applying.
 
 * [Frontend Intern](./Frontend-Intern.md)
 * [Frontend Senior](./Frontend-Senior.md)
