@@ -1,5 +1,9 @@
 # 📝 Assignment: End-to-End Encrypted URL Shortener
 
+Expected time investment: 6 - 8 Hours
+
+Preferred languages/frameworks: Node.js & React or Next.js 
+
 ## 📘 Overview
 
 In this assignment, you will design and implement a **URL shortening service** with a twist: **end-to-end encryption (E2EE)**. Unlike typical shorteners (like bit.ly or tinyurl), your service must ensure that the original long URL is never visible to the server in plaintext.

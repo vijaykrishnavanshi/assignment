@@ -1,5 +1,9 @@
 # 📝 Assignment: Blog Post with Commenting System
 
+Expected time investment: 6 - 8 Hours
+
+Preferred languages/frameworks: Node.js & React or Next.js 
+
 ## 📘 Overview
 
 In this assignment, you'll build a simple **blog platform** where users can **read posts** and **leave comments**. The focus is on building a clean, functional web app that demonstrates how to manage structured content and user input safely and effectively.
